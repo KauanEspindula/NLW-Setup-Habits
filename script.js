@@ -12,11 +12,11 @@ function add() {
   const dayExists = nlwSetup.dayExists(today);
 
   if (dayExists) {
-    alert("Dia já incluso ❌");
+    alert("Dia já registrado ❌");
     return;
   }
 
-  alert("Dia incluso com sucesso ✅");
+  alert("Dia registrado com sucesso ✅");
   //Searching for function 'addDay' inside the library NLWSetup
   nlwSetup.addDay(today);
 }
