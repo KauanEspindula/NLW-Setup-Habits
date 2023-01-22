@@ -1,0 +1,120 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /*box-sizing border box retira as limitações e somas de tamanho, assim descomplicando e permitinha uma melhor edição de tamanhos*/
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #09090a;
+  color: white;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 48px;
+  position: fixed;
+  background-color: #09090a;
+}
+
+/*Element*/
+form {
+  display: flex;
+
+  padding: 180px 48px 48px;
+  width: fit-content;
+}
+
+/*Class*/
+.days {
+  display: flex;
+  /*O gap entre os items que estão flex*/
+  gap: 24px;
+  /* A distancia dos icones dos habitos para os checkboxs*/
+  margin-left: 32px;
+}
+
+.day {
+  display: flex;
+  /*Definindo uma direção para o flex*/
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 8px;
+
+  font-family: "Roboto Mono";
+  color: #a1a1aa;
+
+  font-size: 20px;
+  line-height: 125%;
+  text-align: center;
+}
+
+.habits {
+  margin-top: 55px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.habit {
+  height: 64px;
+  width: 64px;
+
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  /*Alterando a fonte do meu botão*/
+  font-family: "inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+input {
+  /*Appearance: none é para retirar a aparencia do checkbox, para que seja possivel editar melhor*/
+  appearance: none;
+  /*Webkit é para garantir que o navegador não ira aplicar uma aparencia no meu checkbox*/
+  -webkit-appearance: none;
+
+  width: 64px;
+  height: 64px;
+  background: #18181b;
+  /*Border está adicionando uma borda, definindo o seu tipo e dando uma cor*/
+  border: 2px solid #27272a;
+  /*Border radios é o arredondamento das bordas*/
+  border-radius: 8px;
+}
+/*Se o meu input estiver checked, eu faço tal coisa*/
+input:checked {
+  background: #8b5cf6;
+  border: 2px solid #a78bfa;
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
+} ;
