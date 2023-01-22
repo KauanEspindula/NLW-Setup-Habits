@@ -20,6 +20,10 @@ Projeto feito pela RocketSeat para o treinamento e aprendizado de novos devs.
 
 <P>O Habits tem o objetivo de ajudar o usuario a localizar e organizar seus hábitos diarios.</P>
 
+- [Visite o projeto online][def]
+
 ## <strong>📑LAYOUT<strong>
 
 Você pode acessar o layout no figma através [DESSE LINK](https://www.figma.com/community/file/1195327109778210238). Para sua vizualizção é necessario ter conta no [Figma](https://www.figma.com/).
+
+[def]: https://kauanespindula.github.io/NLW-Setup-Habits/
