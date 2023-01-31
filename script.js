@@ -8,7 +8,7 @@ const button = document.querySelector("header button");
 function add() {
   //Criando constante da data de hoje
   const today = new Date().toLocaleDateString("pt-br").slice(0, -5);
-  //Creating and constant if dayExists or not
+  //Creating a constant if dayExists or not
   const dayExists = nlwSetup.dayExists(today);
 
   if (dayExists) {
